@@ -1,0 +1,461 @@
+/* - - - CSS CONFIRMAR - - - */
+
+.propuestatedo{
+  width: 100%;
+  margin-bottom: 50px;
+  float: left;
+}
+
+.inputspropuesta{
+  width: 70%;
+  float: left;
+}
+
+.inputspropuesta h2{
+  margin-left: 6%;
+}
+
+#renders, #proveedores{
+  width: 5%;
+  margin-top: 7px;
+  margin-right: 1%;
+  float: left;
+}
+
+.propuestatedo h2{
+  width: 88%;
+  height: 25px;
+  margin: 0px;
+  margin-top: 10px;
+  float: left;
+  text-align: left;
+}
+
+.propuestatedo p{
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+  margin-left: 6%;
+  float: left;
+  text-align: left;
+}
+
+.precios{
+  width: 30%;
+  float: left;
+}
+
+.precios h2{
+  width: 100%;
+  height: 75px;
+  margin: 0;
+  margin-top: 10px;
+  float: right;
+  text-align: right;
+}
+
+.total{
+  width: 65%;
+  float: right;
+  border-top: solid 1px #62b5a2;
+}
+
+.total h2{
+  width: 50%;
+  margin: 0px;
+  float: left;
+  text-align: left;
+}
+
+.total input{
+  width: 20%;
+  height: auto;
+  padding: 0px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #7e7e7e;
+  font-size: 1em;
+  text-align: right;
+  float: right;
+}
+
+.espacioyestilo{
+  width: 100%;
+  margin-bottom: 50px;
+  float: left;
+}
+
+.espacioyestilo input{
+  display: none;
+}
+
+.espacioadecorar{
+  width: 49.5%;
+  max-width: 200px;
+  float: left;
+}
+
+.espaciohover{
+  position: relative;
+  width: 100%;
+}
+
+.seleccionar{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 98.3%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.espacioadecorar .botonselecionar{
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d29d62;
+  z-index: 3;
+}
+
+.botonselecionar p{
+  margin: auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: #fff;
+}
+
+.living:hover .seleccionar{
+  display: block;
+}
+
+.estilo{
+  width: 49.5%;
+  max-width: 200px;
+  float: right;
+}
+
+.estilo h1{
+  margin: 0px;
+  margin-bottom: 25px;
+}
+
+.opcionesestilos p{
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.estilohover{
+  position: relative;
+}
+
+.estilohover img{
+  width: 100%;
+  max-width: 200px;
+}
+
+.seleccionar{
+  display: none;
+}
+
+.textoseleccionar{
+  position: absolute;
+  width: 100%;
+  padding: 12px;
+}
+
+.textoseleccionar p{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: #fff;
+  z-index: 3;
+}
+
+.estilo .botonselecionar{
+  position: absolute;
+  width: 60%;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d29d62;
+  z-index: 3;
+}
+
+.estilohover:hover .seleccionar{
+  display: block;
+}
+
+.descripcion{
+  width: 100%;
+  margin-bottom: 50px;
+  float: left;
+}
+
+.descripcion p{
+  margin: auto;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.descripcion input{
+  width: 100%;
+  height: 30px;
+  padding-left: 5px;
+  border: solid 1px #d1d1d1;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #7e7e7e;
+}
+
+.descripcion input:focus{
+  border: solid 1px #62b5a2;
+  outline: none;
+}
+
+textarea{
+  width: 100%;
+  height: 300px;
+  padding: 5px;
+  border: solid 1px #d1d1d1;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #7e7e7e;
+  resize: none;
+}
+
+textarea:focus {
+  border: solid 1px #62b5a2;
+  outline: none;
+}
+
+.carga{
+  width: 100%;
+  margin-bottom: 50px;
+  float: left;
+}
+
+.opcionescarga{
+  width: 100%;
+  margin: auto;
+}
+
+.opcionescarga label{
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+.opcionescarga label:hover .st0{
+  fill: #62b5a2;
+}
+
+.opcionescarga label:hover .st1{
+  fill: white;
+}
+
+.carga input{
+  display: none;
+}
+
+.carga01, .carga02, .carga03, .carga04{
+  padding: 3px;
+  float: left;
+}
+
+svg{
+  fill:#7E7E7E;
+  transition: all 0.3s;
+}
+
+svg:hover{
+  fill: #fff;
+}
+
+.contacto{
+  width: 100%;
+  float: left;
+}
+
+.contacto p{
+  margin: auto;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.contacto input{
+  width: 100%;
+  height: 30px;
+  padding-left: 5px;
+  border: solid 1px #d1d1d1;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #7e7e7e;
+}
+
+.contacto input:focus, select:focus{
+  border: solid 1px #62b5a2;
+  outline: none;
+}
+
+.formasdepago{
+  margin-bottom: 50px;
+}
+
+.formasdepago select{
+  width: 100%;
+  height: 30px;
+  padding-left: 5px;
+  border: solid 1px #d1d1d1;
+  -webkit-border-radius: 0px;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #7e7e7e;
+}
+
+.terminos{
+  margin-bottom: 30px;
+  float: left;
+}
+
+.terminos p{
+  text-align: left;
+}
+
+.terminos a{
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #62b5a2;
+}
+
+.terminos input{
+  width: 5px;
+  margin-top: 7px;
+  margin-right: 10px;
+  float: left;
+}
+
+.terminos label{
+  float: left;
+}
+
+.botonenviar{
+  width: 20%;
+  margin-right: 40%;
+  float: right;
+}
+
+.botonenviar input{
+  width: 100%;
+  padding: 10px;
+  background-color: #d29d62;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: #fff;
+  border: none;
+  transition: all 0.3s;
+}
+
+.botonenviar input:hover{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 767px) and (min-width: 500px) {
+
+  .propuestatedo{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .espacioyestilo{
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .descripcion{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .descripcionder{
+    width: 29.5%;
+    margin-right: 1%;
+    float: left;
+  }
+
+  .descripcionizq{
+    width: 69.5%;
+    float: right;
+  }
+
+  .opcionescarga label{
+    display: block;
+    width: 25%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 768px) {
+
+  .propuestatedo{
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .espacioyestilo{
+    width: 40%;
+    margin-left: 30%;
+  }
+
+  .descripcion{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .descripcionder{
+    width: 29.5%;
+    margin-right: 1%;
+    float: left;
+  }
+
+  .descripcionizq{
+    width: 69.5%;
+    float: right;
+  }
+
+  .opcionescarga label{
+    display: block;
+    width: 25%;
+    float: left;
+  }
+
+  .inputnombre, .inputtelefono, .formasdepago{
+    width: 49.5%;
+    float: left;
+  }
+
+  .inputapellido, .inputemail{
+    width: 49.5%;
+    float: right;
+  }
+
+  .terminos{
+    width: 100%;
+  }
+
+}

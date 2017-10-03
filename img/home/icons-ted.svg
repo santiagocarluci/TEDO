@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 480 141" style="enable-background:new 0 0 480 141;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#9AD2CF;}
+	.st1{fill:#62B5A2;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:#DBE171;}
+	.st4{fill:#C0D357;}
+	.st5{fill:#D0D3D2;}
+	.st6{fill:#7B7F81;}
+</style>
+<g id="XMLID_7078_">
+	<polygon id="XMLID_7081_" class="st0" points="69.4,140.3 -0.7,70.2 69.4,0 	"/>
+	<polygon id="XMLID_7080_" class="st1" points="69.4,0 139.6,70.2 69.4,140.3 	"/>
+	<path id="XMLID_7079_" class="st2" d="M41.7,92h53.9c0,0,13-2.2,13-15S98.1,62.3,98.1,62.3S100.1,38,77,38c0,0-10.6-0.7-20,10.8
+		c0,0-10.4-1.7-15.3,13.3c0,0-12.5,3.4-12.5,14.7S41.7,92,41.7,92z"/>
+</g>
+<g id="XMLID_7072_">
+	<polygon id="XMLID_7077_" class="st3" points="239.6,140.3 169.5,70.2 239.6,0 	"/>
+	<polygon id="XMLID_7076_" class="st4" points="239.6,0 309.8,70.2 239.6,140.3 	"/>
+	<path id="XMLID_7075_" class="st2" d="M239.7,32.4L239.7,32.4L239.7,32.4C239.7,32.4,239.6,32.4,239.7,32.4L239.7,32.4
+		c-0.9,0-26.4,1.6-26.4,24.4c0,18.1,8.1,12.9,13.2,35.8h13.2l0,0h13.2c5.2-23,13.2-17.8,13.2-35.8C266.1,34,240.5,32.5,239.7,32.4z"
+		/>
+	<path id="XMLID_7074_" class="st2" d="M248.1,99.3h-16.8c-0.6,0-1.1-0.5-1.1-1.1v-2c0-0.6,0.5-1.1,1.1-1.1h16.8
+		c0.6,0,1.1,0.5,1.1,1.1v2C249.2,98.8,248.7,99.3,248.1,99.3z"/>
+	<path id="XMLID_7073_" class="st2" d="M239.6,100.7h-12.8c0,0,2.1,6.2,12.8,6.2s12.8-6.2,12.8-6.2H239.6z"/>
+</g>
+<g>
+	<polygon id="XMLID_7071_" class="st5" points="409.8,140.3 339.7,70.2 409.8,0 	"/>
+	<polygon id="XMLID_7070_" class="st6" points="409.8,0 480,70.2 409.8,140.3 	"/>
+	<circle id="XMLID_7069_" class="st2" cx="409.8" cy="72.9" r="30.5"/>
+	<path id="XMLID_7068_" class="st2" d="M409.8,29.1c-6.2,0-11.3,5-11.3,11.3h22.6C421.1,34.2,416.1,29.1,409.8,29.1z"/>
+	<path id="XMLID_7067_" class="st2" d="M452.1,60.7c-1.7-6-7.9-9.5-13.9-7.8l6.1,21.7C450.4,72.9,453.8,66.7,452.1,60.7z"/>
+	<polygon class="st6" points="424.1,54.3 411.9,73.8 392.1,74.5 409.3,70.2 	"/>
+</g>
+</svg>

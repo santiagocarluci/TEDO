@@ -1,0 +1,146 @@
+/* - - - CSS TED y PORTFOLIO - - - */
+
+.ambientes{
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ebf5ec;
+}
+
+.ambientes a{
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #7e7e7e;
+  font-size: 0.9em;
+  text-align: left;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.ambientes a:first-child{
+  border-top: solid 1px rgba(98, 181, 162, 0.2);
+}
+
+.ambientes a:hover{
+  opacity: 0.5;
+}
+
+.ambientes h1{
+  margin: auto;
+  margin-left: 30px;
+  margin-bottom:15px;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.imagenesambientes{
+  width: 100%;
+  margin: auto;
+}
+
+.imagenesambientes{
+  width: 100%;
+}
+
+.imagenesambientes h1{
+  margin: 20px 0px 10px 0px;
+  font-size: 1.1em;
+}
+
+.imagenesambientes a{
+  width: 100%;
+  margin: 0px;
+  transition: all 0.5s;
+}
+
+.imagenesambientes a:hover{
+  opacity: 0.5;
+}
+
+.imagenesambientes img{
+  width: 100%;
+  margin: 0px;
+}
+
+.comedores-oculto, .livings-oculto, .dormitorios-oculto, .infantiles-oculto,
+.cocinas-oculto, .comercios-oculto, .exteriores-oculto, .baños-oculto{
+  display: none;
+}
+
+.botonver{
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.botonver a{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #7e7e7e;
+  font-size: 0.7em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.botonver a:hover{
+  opacity: 0.5;
+}
+
+/* - - - Media Query 768px - 2560px - - - */
+
+@media only screen and (max-width: 2560px) and (min-width: 768px) {
+
+  .ambientes{
+    width: 20%;
+    max-width: 260px;
+    height: 500px;
+    margin-right: 5%;
+    float: left;
+  }
+
+  .imagenesambientes{
+    width: 75%;
+    max-width: 980px;
+    float: right;
+  }
+
+  .ambientes h1{
+    margin-left: 20px;
+    text-align: left;
+  }
+
+  .ambientes a{
+    margin-left: 20px;
+    padding: 5px;
+    text-align: left;
+    border: none;
+  }
+
+  .ambientes a:first-child{
+    border-top: none;
+  }
+
+  .imagenesambientes h1{
+    margin: 50px 0px 10px 0px;
+    text-align: left;
+  }
+
+  .iv img{
+    width: 30%;
+  }
+
+  .vermas{
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #7e7e7e;
+
+  }
+}

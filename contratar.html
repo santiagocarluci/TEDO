@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contratanos.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700" rel="stylesheet">
+    <title>Contratar</title>
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script>
+      function Suma(isChecked, myValue){
+      	tot = parseInt(document.form01.total.value);
+      	myValue = parseInt(myValue);
+      	if (isChecked) document.form01.total.value = tot + myValue;
+      	else document.form01.total.value = tot - myValue;
+      }
+    </script>
+    <script>
+      function readURL(input){
+      if (input.files && input.files[0]){
+          var reader = new FileReader();
+
+          reader.onload = function (e){
+              $('#imgcarga').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+      $("#cargas").change(function(){
+          readURL(this);
+      });
+    </script>
+  </head>
+<!--- ================== FIN HEAD ================== --->
+
+  <body>
+    <header id="upbuttom">
+      <div class="wrapper">
+        <a href="index.html"><img class="isotipo" src="img/isotipo.svg" alt="Isotipo Tu Espacio Deco"></a>
+        <input type="checkbox" id="menubar">
+        <label class="icon-menu" for="menubar"></label>
+        <nav class="menu">
+          <a href="index.html">HOME</a>
+          <a href="conocenos.html">CONOCENOS</a>
+          <a href="servicios.html">SERVICIOS</a>
+          <a href="portafolio.html">PORTFOLIO</a>
+          <a class="selected" href="contratar.html">CONTRATAR</a>
+          <a href="contacto.html">CONTACTO</a>
+        </nav>
+      </div>
+    </header>
+<!--- ================== FIN MENU ================== --->
+
+    <main>
+      <div class="redes">
+        <a href="https://www.instagram.com/tu_espacio_deco_online/"><img src="img/icon-insta.svg" alt="Icono instagram."></a>
+        <a href="https://www.facebook.com/tuespaciodeconline/"><img src="img/icon-face.svg" alt="Icono facebook."></a>
+        <a href="mailto:hola@tuespaciodeconline.com.ar"><img src="img/icon-mail.svg" alt="Icono email."></a>
+      </div>
+<!--- ================== FIN REDES ================== --->
+
+      <div class="upbuttom">
+        <a href="#upbuttom"><img src="img/upbuttom.svg" alt="Boton arriba."></a>
+      </div>
+<!--- ================== FIN UP ================== --->
+    <section>
+      <div class="wrapper">
+        <form class="formulariocontratanos01" name="form01" action="confirmar.php" method="post">
+          <h1>DISEÑÁ TUS ESPACIOS</h1>
+          <p>Completá el formulario y hacé realidad el espacio que siempre soñaste.</p>
+          <div class="contacto">
+            <div class="inputnombre">
+              <label for="nombre"><p>Nombre</p></label>
+              <input id="nombre" type="text" name="nombre" required>
+            </div>
+            <div class="inputapellido">
+              <label for="apellido"><p>Apellido</p></label>
+              <input id="apellido" type="text" name="apellido" required>
+            </div>
+            <div class="inputemail">
+              <label for="email"><p>Email</p></label>
+              <input id="email" type="email" name="email" required>
+            </div>
+            <div class="inputtelefono">
+              <label for="telefono"><p>Telefono</p></label>
+              <input id="telefono" type="text" name="telefono" required>
+            </div>
+            <div class="inputasunto">
+              <label for="asunto"><p>Asunto</p></label>
+              <input id="asunto" type="text" name="asunto" required>
+            </div>
+          </div>
+
+          <div class="propuestatedo">
+            <div class="inputspropuesta">
+              <h2>PROPUESTA DECONLINE</h2><p>Renovamos un espacio de tu casa o trabajo.</p>
+              <input id="renders" onclick="Suma(this.checked,this.value)" type="checkbox" name="renders" value="3000">
+              <label for="renders"><h2>RENDERS</h2><p>La propuesta en digital con tres imagenes 3D.</p></label>
+              <input id="proveedores" onclick="Suma(this.checked,this.value)" type="checkbox" name="proveedores" value="500">
+              <label for="proveedores"><h2>PROVEEDORES</h2><p>Un listado detallado de los productos necesarios.</p></label>
+            </div>
+            <div class="precios">
+              <h2>$ 3900</h2>
+              <div class="preciorenders">
+                <h2>$ 3000</h2>
+              </div>
+              <div class="preciopro">
+                <h2>$ 500</h2>
+              </div>
+            </div>
+            <div class="total">
+              <input id="total" name="total" type="text" value="3900" readonly="readonly"/>
+              <h2>TOTAL</h2>
+            </div>
+          </div>
+
+          <div class="espacioadecorar">
+            <div class="tituloespacioadecorar">
+              <h1>¿QUÉ ESPACIO VAS A DECORAR?</h1>
+              <p>Elegí el lugar que querés remodelar.</p>
+            </div>
+            <div class="opcionesespacios">
+              <div class="living">
+                <input id="living" type="radio" name="espacio" required>
+                <label for="living">
+                  <div class="espaciohover">
+                    <div class="seleccionar">
+                      <div class="botonselecionar">
+                        <p>SELECIONAR</p>
+                      </div>
+                    </div>
+                    <img src="img/contratar/living.svg" alt="Icono de Living">
+                  </div>
+                  <p>LIVING</p>
+                </label>
+              </div>
+              <div class="dormitorio">
+                <input id="dormitorio" type="radio" name="espacio" required>
+                <label for="dormitorio">
+                  <div class="espaciohover">
+                    <div class="seleccionar">
+                      <div class="botonselecionar">
+                        <p>SELECIONAR</p>
+                      </div>
+                    </div>
+                    <img src="img/contratar/dormitorio.svg" alt="Icono de dormitorio">
+                  </div>
+                  <p>DORMITORIO</p>
+                </label>
+              </div>
+              <div class="escritorio">
+                <input id="escritorio" type="radio" name="espacio" required>
+                <label for="escritorio">
+                  <div class="espaciohover">
+                    <div class="seleccionar">
+                      <div class="botonselecionar">
+                        <p>SELECIONAR</p>
+                      </div>
+                    </div>
+                    <img src="img/contratar/escritorio.svg" alt="Icono de escritorio">
+                  </div>
+                  <p>ESCRITORIO</p>
+                </label>
+              </div>
+              <div class="cocina">
+                <input id="cocina" type="radio" name="espacio" required>
+                <label for="cocina">
+                  <div class="espaciohover">
+                    <div class="seleccionar">
+                      <div class="botonselecionar">
+                        <p>SELECIONAR</p>
+                      </div>
+                    </div>
+                    <img src="img/contratar/cocina.svg" alt="Icono de cocina">
+                  </div>
+                  <p>COCINA</p>
+                </label>
+              </div>
+              <div class="comedor">
+                <input id="comedor" type="radio" name="espacio" required>
+                <label for="comedor">
+                  <div class="espaciohover">
+                    <div class="seleccionar">
+                      <div class="botonselecionar">
+                        <p>SELECIONAR</p>
+                      </div>
+                    </div>
+                    <img src="img/contratar/comedor.svg" alt="Icono de comedor">
+                  </div>
+                  <p>COMEDOR</p>
+                </label>
+              </div>
+              <div class="baño">
+                <input id="baño" type="radio" name="espacio" required>
+                <label for="baño">
+                  <div class="espaciohover">
+                    <div class="seleccionar">
+                      <div class="botonselecionar">
+                        <p>SELECIONAR</p>
+                      </div>
+                    </div>
+                    <img src="img/contratar/baño.svg" alt="Icono de baño">
+                  </div>
+                  <p>BAÑO</p>
+                </label>
+              </div>
+              <div class="recibidor">
+                <input id="recibidor" type="radio" name="espacio" required>
+                <label for="recibidor">
+                  <div class="espaciohover">
+                    <div class="seleccionar">
+                      <div class="botonselecionar">
+                        <p>SELECIONAR</p>
+                      </div>
+                    </div>
+                    <img src="img/contratar/recibidor.svg" alt="Icono de recibidor">
+                  </div>
+                  <p>RECIBIDOR</p>
+                </label>
+              </div>
+              <div class="balcon">
+                <input id="balcon" type="radio" name="espacio" required>
+                <label for="balcon">
+                  <div class="espaciohover">
+                    <div class="seleccionar">
+                      <div class="botonselecionar">
+                        <p>SELECIONAR</p>
+                      </div>
+                    </div>
+                    <img src="img/contratar/balcon.svg" alt="Icono de balcon">
+                  </div>
+                  <p>BALCON / TERRAZA</p>
+                </label>
+              </div>
+              <div class="tresespacios">
+                <div class="mudanza">
+                  <input id="mudanza" type="radio" name="espacio" required>
+                  <label for="mudanza">
+                    <div class="espaciohover">
+                      <div class="seleccionar">
+                        <div class="botonselecionar">
+                          <p>SELECIONAR</p>
+                        </div>
+                      </div>
+                      <img src="img/contratar/mudanza.svg" alt="Icono de mudanza">
+                    </div>
+                    <p>PRE MUDANZA</p>
+                  </label>
+                </div>
+                <div class="comercial">
+                  <input id="comercial" type="radio" name="espacio" required>
+                  <label for="comercial">
+                    <div class="espaciohover">
+                      <div class="seleccionar">
+                        <div class="botonselecionar">
+                          <p>SELECIONAR</p>
+                        </div>
+                      </div>
+                      <img src="img/contratar/comercial.svg" alt="Icono de comercial">
+                    </div>
+                    <p>ESPACIO COMERCIAL / VIDRIERA</p>
+                  </label>
+                </div>
+                <div class="oficina">
+                  <input id="oficina" type="radio" name="espacio" required>
+                  <label for="oficina">
+                    <div class="espaciohover">
+                      <div class="seleccionar">
+                        <div class="botonselecionar">
+                          <p>SELECIONAR</p>
+                        </div>
+                      </div>
+                      <img src="img/contratar/oficina.svg" alt="Icono de oficina">
+                    </div>
+                    <p>OFICINA / CONSULTORIO</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="estilo">
+            <div class="tituloestilo">
+              <h1>¿CUÁL ES EL ESTILO QUE MÁS TE GUSTA?</h1>
+            </div>
+            <div class="opcionesestilos">
+              <div class="clasico">
+                <input id="clasico" type="radio" name="estilo" required>
+                <label for="clasico">
+                  <div class="estilohover">
+                    <div class="seleccionar">
+                      <div class="textoseleccionar">
+                        <p>Elegante y sofisticado, proviene del Barroco, se caracteriza por la simetría y la abundancia de elementos.</p>
+                      </div>
+                      <div class="botonselecionar">
+                        <p>SELECIONAR</p>
+                      </div>
+                    </div>
+                    <img src="img/contratar/clasico.jpg" alt="Icono de clasico">
+                  </div>
+                  <p>CLASICO</p>
+                </label>
+              </div>
+              <div class="contemporaneo">
+                <input id="contemporaneo" type="radio" name="estilo" required>
+                <label for="contemporaneo">
+                  <div class="estilohover">
+                    <div class="seleccionar">
+                      <div class="textoseleccionar">
+                        <p>Es aquí y ahora, combina de manera armónica materiales diversos con una distribución poco sobrecargada.</p>
+                      </div>
+                      <div class="botonselecionar">
+                        <p>SELECIONAR</p>
+                      </div>
+                    </div>
+                    <img src="img/contratar/contemporaneo.jpg" alt="Icono de contemporaneo">
+                  </div>
+                  <p>CONTEMPORÁNEO</p>
+                </label>
+              </div>
+              <div class="escandinavo">
+                <input id="escandinavo" type="radio" name="estilo" required>
+                <label for="escandinavo">
+                  <div class="estilohover">
+                    <div class="seleccionar">
+                      <div class="textoseleccionar">
+                        <p>Funcional y práctico, surge de países nórdico, suma líneas rectas, colores claros y abundancia de luz.</p>
+                      </div>
+                      <div class="botonselecionar">
+                        <p>SELECIONAR</p>
+                      </div>
+                    </div>
+                    <img src="img/contratar/escandinavo.jpg" alt="Icono de escandinavo">
+                  </div>
+                  <p>ESCANDINAVO</p>
+                </label>
+              </div>
+              <div class="industrial">
+                <input id="industrial" type="radio" name="estilo" required>
+                <label for="industrial">
+                  <div class="estilohover">
+                    <div class="seleccionar">
+                      <div class="textoseleccionar">
+                        <p>Fabril y atemporal, proviene del New York de los 50, aportta funcionalidad y muestra estructuras al desnudo.</p>
+                      </div>
+                      <div class="botonselecionar">
+                        <p>SELECIONAR</p>
+                      </div>
+                    </div>
+                    <img src="img/contratar/industrial.jpg" alt="Icono de industrial">
+                  </div>
+                  <p>INDUSTRIAL</p>
+                </label>
+              </div>
+              <div class="tresestilos">
+                <div class="rustico">
+                  <input id="rustico" type="radio" name="estilo" required>
+                  <label for="rustico">
+                    <div class="estilohover">
+                      <div class="seleccionar">
+                        <div class="textoseleccionar">
+                          <p>Tradicional y cálido, se acerca a la naturaleza a través del uso de materiales como madera, piedra y fibras.</p>
+                        </div>
+                        <div class="botonselecionar">
+                          <p>SELECIONAR</p>
+                        </div>
+                      </div>
+                      <img src="img/contratar/rustico.jpg" alt="Icono de rustico">
+                    </div>
+                    <p>RUSTICO</p>
+                  </label>
+                </div>
+                <div class="vintage">
+                  <input id="vintage" type="radio" name="estilo" required>
+                  <label for="vintage">
+                    <div class="estilohover">
+                      <div class="seleccionar">
+                        <div class="textoseleccionar">
+                          <p>Nostálgico y romántico, se inspira en la decoración de antaño, con colores gastados y objetos retro.</p>
+                        </div>
+                        <div class="botonselecionar">
+                          <p>SELECIONAR</p>
+                        </div>
+                      </div>
+                      <img src="img/contratar/vintage.jpg" alt="Icono de vintage">
+                    </div>
+                    <p>VINTAGE</p>
+                  </label>
+                </div>
+                <div class="nodefinido">
+                  <input id="nodefinido" type="radio" name="estilo" required>
+                  <label for="nodefinido">
+                    <div class="estilohover">
+                      <div class="seleccionar">
+                        <div class="botonselecionar">
+                          <p>SELECIONAR</p>
+                        </div>
+                      </div>
+                      <img src="img/contratar/nodefinido.jpg" alt="Icono de no definido">
+                    </div>
+                    <p>NO DEFINIDO</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="descripcion">
+            <div class="titulodescripcion">
+              <h1>DESCRIPCIÓN Y FOTOS</h1>
+              <p>Detallá cómo es el espacio y qué planeás darle.</p>
+            </div>
+            <div class="opcionesdescripcion">
+              <div class="descripcionlargo">
+                <label for="largo"><p>Largo</p></label>
+                <input id="largo" type="text" name="largo" required>
+              </div>
+              <div class="descripcionancho">
+                <label for="ancho"><p>Ancho</p></label>
+                <input id="ancho" type="text" name="ancho" required>
+              </div>
+              <div class="descripcionaltura">
+                <label for="altura"><p>Altura</p></label>
+                <input id="altura" type="text" name="altura" required>
+              </div>
+              <div class="descripcionsuperficie">
+                <label for="superficie"><p>Superficie en m² (opcional)</p></label>
+                <input id="superficie" type="text" name="superficie">
+              </div>
+              <div class="descripciondetalles">
+                <label for="detalles"><p>Detalles adicionales</p></label>
+                <textarea id="detalle" name="detalles"></textarea>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="carga">
+            <div class="titulocarga">
+              <p>Subí algunas fotos del lugar, es importante que podamos ver el entorno.</p>
+            </div>
+            <div class="opcionescarga">
+
+              <div class="cargas">
+                <label id="imgcarga" class="carga01" for="carga01">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 140.2 140.2" style="enable-background:new 0 0 140.2 140.2;" xml:space="preserve">
+                  <style type="text/css">
+                  	.st0{fill:#FFFFFF;}
+                  	.st1{fill:#7E7E7E;}
+                  </style>
+                  <g id="Fondo">
+                  	<rect id="XMLID_1092_" class="st0" width="140.2" height="140.2"/>
+                  </g>
+                  <g id="Nube">
+                  	<g id="XMLID_279_">
+                  		<path class="st1" d="M139.2,1v138.2H1V1H139.2 M140.2,0H0v140.2h140.2V0L140.2,0z"/>
+                  	</g>
+                  	<g id="XMLID_280_">
+                  		<path id="XMLID_1024_" class="st1" d="M91.6,90h-11c-0.6,0-1-0.4-1-1s0.4-1,1-1h11c9.1,0,17-8.7,17-18.5c0-9.6-7.3-17.4-16.4-17.4
+                  			c-1.8,0-3.7,0.2-5.4,0.8L86,53.2l-0.4-0.7c-3.8-6.9-11-11.3-18.8-11.4c-11,0.2-20.2,8.4-21.6,19.2l-0.1,0.9h-0.9h-0.3
+                  			c-6.6,0-12.3,6.2-12.3,13.4S37.4,88,44,88h16.6c0.6,0,1,0.4,1,1s-0.4,1-1,1H44c-7.7,0-14.4-7.2-14.4-15.4c0-8,6.4-15,13.8-15.4
+                  			c1.9-11.5,11.8-19.9,23.4-20.1c8.3,0.1,15.9,4.5,20.2,11.7c1.7-0.5,3.5-0.7,5.3-0.7c10.1,0,18.3,8.7,18.3,19.4
+                  			C110.6,80.4,101.7,90,91.6,90z"/>
+                  		<path id="XMLID_1018_" class="st1" d="M70.6,107c-0.6,0-1-0.4-1-1V66c0-0.6,0.4-1,1-1s1,0.4,1,1v40C71.6,106.6,71.1,107,70.6,107z
+                  			"/>
+                  		<path id="XMLID_1017_" class="st1" d="M80.6,76c-0.2,0-0.5-0.1-0.7-0.3l-9.3-8.4l-9.3,8.4c-0.4,0.4-1,0.3-1.4-0.1s-0.3-1,0.1-1.4
+                  			l10.7-9.6l10.7,9.6c0.4,0.4,0.5,1,0.1,1.4C81.2,75.9,80.9,76,80.6,76z"/>
+                  	</g>
+                  </g>
+                  </svg>
+                </label>
+                <input id="carga01" type="file" name="carga01">
+              </div>
+
+              <div class="cargas">
+                <label id="imgcarga" class="carga02" for="carga02">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 140.2 140.2" style="enable-background:new 0 0 140.2 140.2;" xml:space="preserve">
+                  <style type="text/css">
+                  	.st0{fill:#FFFFFF;}
+                  	.st1{fill:#7E7E7E;}
+                  </style>
+                  <g id="Fondo">
+                  	<rect id="XMLID_1092_" class="st0" width="140.2" height="140.2"/>
+                  </g>
+                  <g id="Nube">
+                  	<g id="XMLID_279_">
+                  		<path class="st1" d="M139.2,1v138.2H1V1H139.2 M140.2,0H0v140.2h140.2V0L140.2,0z"/>
+                  	</g>
+                  	<g id="XMLID_280_">
+                  		<path id="XMLID_1024_" class="st1" d="M91.6,90h-11c-0.6,0-1-0.4-1-1s0.4-1,1-1h11c9.1,0,17-8.7,17-18.5c0-9.6-7.3-17.4-16.4-17.4
+                  			c-1.8,0-3.7,0.2-5.4,0.8L86,53.2l-0.4-0.7c-3.8-6.9-11-11.3-18.8-11.4c-11,0.2-20.2,8.4-21.6,19.2l-0.1,0.9h-0.9h-0.3
+                  			c-6.6,0-12.3,6.2-12.3,13.4S37.4,88,44,88h16.6c0.6,0,1,0.4,1,1s-0.4,1-1,1H44c-7.7,0-14.4-7.2-14.4-15.4c0-8,6.4-15,13.8-15.4
+                  			c1.9-11.5,11.8-19.9,23.4-20.1c8.3,0.1,15.9,4.5,20.2,11.7c1.7-0.5,3.5-0.7,5.3-0.7c10.1,0,18.3,8.7,18.3,19.4
+                  			C110.6,80.4,101.7,90,91.6,90z"/>
+                  		<path id="XMLID_1018_" class="st1" d="M70.6,107c-0.6,0-1-0.4-1-1V66c0-0.6,0.4-1,1-1s1,0.4,1,1v40C71.6,106.6,71.1,107,70.6,107z
+                  			"/>
+                  		<path id="XMLID_1017_" class="st1" d="M80.6,76c-0.2,0-0.5-0.1-0.7-0.3l-9.3-8.4l-9.3,8.4c-0.4,0.4-1,0.3-1.4-0.1s-0.3-1,0.1-1.4
+                  			l10.7-9.6l10.7,9.6c0.4,0.4,0.5,1,0.1,1.4C81.2,75.9,80.9,76,80.6,76z"/>
+                  	</g>
+                  </g>
+                  </svg>
+                </label>
+                <input id="carga02" type="file" name="carga02">
+              </div>
+
+              <div class="cargas">
+                <label id="imgcarga" class="carga03" for="carga03">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 140.2 140.2" style="enable-background:new 0 0 140.2 140.2;" xml:space="preserve">
+                  <style type="text/css">
+                  	.st0{fill:#FFFFFF;}
+                  	.st1{fill:#7E7E7E;}
+                  </style>
+                  <g id="Fondo">
+                  	<rect id="XMLID_1092_" class="st0" width="140.2" height="140.2"/>
+                  </g>
+                  <g id="Nube">
+                  	<g id="XMLID_279_">
+                  		<path class="st1" d="M139.2,1v138.2H1V1H139.2 M140.2,0H0v140.2h140.2V0L140.2,0z"/>
+                  	</g>
+                  	<g id="XMLID_280_">
+                  		<path id="XMLID_1024_" class="st1" d="M91.6,90h-11c-0.6,0-1-0.4-1-1s0.4-1,1-1h11c9.1,0,17-8.7,17-18.5c0-9.6-7.3-17.4-16.4-17.4
+                  			c-1.8,0-3.7,0.2-5.4,0.8L86,53.2l-0.4-0.7c-3.8-6.9-11-11.3-18.8-11.4c-11,0.2-20.2,8.4-21.6,19.2l-0.1,0.9h-0.9h-0.3
+                  			c-6.6,0-12.3,6.2-12.3,13.4S37.4,88,44,88h16.6c0.6,0,1,0.4,1,1s-0.4,1-1,1H44c-7.7,0-14.4-7.2-14.4-15.4c0-8,6.4-15,13.8-15.4
+                  			c1.9-11.5,11.8-19.9,23.4-20.1c8.3,0.1,15.9,4.5,20.2,11.7c1.7-0.5,3.5-0.7,5.3-0.7c10.1,0,18.3,8.7,18.3,19.4
+                  			C110.6,80.4,101.7,90,91.6,90z"/>
+                  		<path id="XMLID_1018_" class="st1" d="M70.6,107c-0.6,0-1-0.4-1-1V66c0-0.6,0.4-1,1-1s1,0.4,1,1v40C71.6,106.6,71.1,107,70.6,107z
+                  			"/>
+                  		<path id="XMLID_1017_" class="st1" d="M80.6,76c-0.2,0-0.5-0.1-0.7-0.3l-9.3-8.4l-9.3,8.4c-0.4,0.4-1,0.3-1.4-0.1s-0.3-1,0.1-1.4
+                  			l10.7-9.6l10.7,9.6c0.4,0.4,0.5,1,0.1,1.4C81.2,75.9,80.9,76,80.6,76z"/>
+                  	</g>
+                  </g>
+                  </svg>
+                </label>
+                <input id="carga03" type="file" name="carga03">
+              </div>
+
+              <div class="cargas">
+                <label id="imgcarga" class="carga04" for="carga04">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  	 viewBox="0 0 140.2 140.2" style="enable-background:new 0 0 140.2 140.2;" xml:space="preserve">
+                  <style type="text/css">
+                  	.st0{fill:#FFFFFF;}
+                  	.st1{fill:#7E7E7E;}
+                  </style>
+                  <g id="Fondo">
+                  	<rect id="XMLID_1092_" class="st0" width="140.2" height="140.2"/>
+                  </g>
+                  <g id="Nube">
+                  	<g id="XMLID_279_">
+                  		<path class="st1" d="M139.2,1v138.2H1V1H139.2 M140.2,0H0v140.2h140.2V0L140.2,0z"/>
+                  	</g>
+                  	<g id="XMLID_280_">
+                  		<path id="XMLID_1024_" class="st1" d="M91.6,90h-11c-0.6,0-1-0.4-1-1s0.4-1,1-1h11c9.1,0,17-8.7,17-18.5c0-9.6-7.3-17.4-16.4-17.4
+                  			c-1.8,0-3.7,0.2-5.4,0.8L86,53.2l-0.4-0.7c-3.8-6.9-11-11.3-18.8-11.4c-11,0.2-20.2,8.4-21.6,19.2l-0.1,0.9h-0.9h-0.3
+                  			c-6.6,0-12.3,6.2-12.3,13.4S37.4,88,44,88h16.6c0.6,0,1,0.4,1,1s-0.4,1-1,1H44c-7.7,0-14.4-7.2-14.4-15.4c0-8,6.4-15,13.8-15.4
+                  			c1.9-11.5,11.8-19.9,23.4-20.1c8.3,0.1,15.9,4.5,20.2,11.7c1.7-0.5,3.5-0.7,5.3-0.7c10.1,0,18.3,8.7,18.3,19.4
+                  			C110.6,80.4,101.7,90,91.6,90z"/>
+                  		<path id="XMLID_1018_" class="st1" d="M70.6,107c-0.6,0-1-0.4-1-1V66c0-0.6,0.4-1,1-1s1,0.4,1,1v40C71.6,106.6,71.1,107,70.6,107z
+                  			"/>
+                  		<path id="XMLID_1017_" class="st1" d="M80.6,76c-0.2,0-0.5-0.1-0.7-0.3l-9.3-8.4l-9.3,8.4c-0.4,0.4-1,0.3-1.4-0.1s-0.3-1,0.1-1.4
+                  			l10.7-9.6l10.7,9.6c0.4,0.4,0.5,1,0.1,1.4C81.2,75.9,80.9,76,80.6,76z"/>
+                  	</g>
+                  </g>
+                  </svg>
+                </label>
+                <input id="carga04" type="file" name="carga04">
+              </div>
+            </div>
+          </div>
+          <div class="botonenviar">
+            <input id="enviar" name="enviar" type="submit" value="ENVIAR"/>
+          </div>
+        </form>
+<!--- ================== FIN FORMULARIO ================== --->
+
+      </div>
+<!--- ================== FIN WRAPPER ================== --->
+
+    </section>
+<!--- ================== FIN SECTION ================== --->
+
+    </main>
+<!--- ================== FIN MAIN ================== --->
+
+    <footer>
+      <div class="wrapper">
+        <div class="footersection01">
+          <h2>MÁS<br>INFORMACIÓN</h2>
+          <a href="conocenos.html"><p>Conocenos</p></a>
+          <a href="pregfrec.html"><p>Preguntas frecuentes</p></a>
+        </div>
+        <div class="footersection01">
+          <h2>FORMAS DE<br>PAGO</h2>
+          <div class="mercado">
+            <p>Mercado Pago</p>
+            <img src="img/mercadolibre-icon.svg" alt="Icono Mercado Libre">
+          </div>
+          <div class="transfe">
+            <p>Transferencia bancaria</p>
+            <img src="img/transferencia-icon.svg" alt="Icono Transferencia">
+          </div>
+        </div>
+        <div class="footersection02">
+          <h2>CONTACTANOS</h2>
+          <div class="contactos">
+            <div class="contactos01">
+              <a href="mailto:hola@tuespaciodeconline.com.ar"><img src="img/email.svg" alt="Icono de mail."><p>hola@tuespaciodeconline.com.ar</p></a>
+            </div>
+            <br>
+            <div class="contactos01">
+              <img src="img/tel.svg" alt="Icono de telefono.">
+              <p>15-2558-4968</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="derechos">
+        <div class="wrapper">
+          <div class="derechos01">
+            <p>Tu espacio Deco Online © 2015. Todos los derechos reservados.</p>
+          </div>
+          <div class="derechos02">
+            <a href="http://maracuyapublicidad.com/site/"><p>Diseñado por Maracuyá Publicidad.</p></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!--- ================== FIN FOOTER ================== --->
+  </body>
+</html>

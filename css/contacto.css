@@ -1,0 +1,136 @@
+/* - - - CSS CONTACTO - - - */
+
+.contenidosform{
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+
+.formulario{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contacto{
+  width: 100%;
+}
+
+.inputnombre, .inputapellido, .inputemail, .inputtelefono, .inputasunto, .inputmensaje{
+  width: 100%;
+}
+
+label p{
+  margin: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+input{
+  width: 100%;
+  height: 30px;
+  padding-left: 5px;
+  border: solid 1px #d1d1d1;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #7e7e7e;
+}
+
+input:focus {
+  border: solid 1px #62b5a2;
+  outline: none;
+}
+
+textarea{
+  width: 100%;
+  height: 300px;
+  padding: 5px;
+  border: solid 1px #d1d1d1;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #7e7e7e;
+  resize: none;
+}
+
+textarea:focus {
+  border: solid 1px #62b5a2;
+  outline: none;
+}
+
+.campos{
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.campos p{
+  text-align: left;
+}
+
+.campos a{
+  color: #62b5a2;
+  text-decoration: none;
+}
+
+.botonenviar{
+  width: 100%;
+  margin: auto;
+}
+
+.botonenviar input{
+  margin: auto;
+  padding: 0px;
+  background-color: #d29d62;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: #fff;
+  border: none;
+  transition: all 0.3s;
+}
+
+.botonenviar input:hover{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 768px) {
+
+  .contenidosform{
+    width: 30%;
+    margin-left: 35%;
+  }
+
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 768px) {
+
+  .contacto{
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .campos{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+  }
+
+  .contenidosform{
+    width: 30%;
+    margin-left: 35%;
+  }
+
+  .inputnombre, .inputapellido, .inputemail, .inputtelefono{
+    width: 48.5%;
+    float: left;
+  }
+
+  .inputnombre, .inputemail{
+    margin-right: 3%;
+  }
+
+  .botonenviar{
+    width: 30%;
+  }
+}

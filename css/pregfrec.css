@@ -1,0 +1,22 @@
+/* - - - CSS PREGUNTAS FRECUENTES - - - */
+
+.preguntas{
+  width: 90%;
+  margin: auto;
+}
+
+.preguntas p{
+  margin-top: 25px;
+  text-align: left;
+}
+
+/* - - - Media Query 768px - 2560px - - - */
+
+@media only screen and (max-width: 2560px) and (min-width: 768px) {
+
+  .preguntas{
+    width: 70%;
+    max-width: 700px;
+    margin: auto;
+  }
+}

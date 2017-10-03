@@ -1,0 +1,487 @@
+/* - - - CSS CONTRATANOS - - - */
+
+.contacto{
+  width: 100%;
+  margin-bottom: 50px;
+  float: left;
+}
+
+label{
+  cursor: pointer;
+}
+
+label p{
+  margin: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+input{
+  width: 100%;
+  height: 30px;
+  padding-left: 5px;
+  border: solid 1px #d1d1d1;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #7e7e7e;
+}
+
+input:focus {
+  border: solid 1px #62b5a2;
+  outline: none;
+}
+
+.propuestatedo{
+ width: 100%;
+ margin-bottom: 50px;
+ float: left;
+}
+
+.inputspropuesta{
+  width: 70%;
+  float: left;
+}
+
+.inputspropuesta h2{
+  margin-left: 6%;
+}
+
+#renders, #proveedores{
+  width: 5%;
+  margin-top: 7px;
+  margin-right: 1%;
+  float: left;
+}
+
+.propuestatedo h2{
+  width: 88%;
+  height: 25px;
+  margin: 0px;
+  margin-top: 10px;
+  float: left;
+  text-align: left;
+}
+
+.propuestatedo p{
+  width: 100%;
+  height: 50px;
+  margin: 0px;
+  margin-left: 6%;
+  float: left;
+  text-align: left;
+}
+
+.precios{
+  width: 30%;
+  float: left;
+}
+
+.precios h2{
+  width: 100%;
+  height: 75px;
+  margin: 0;
+  margin-top: 10px;
+  float: right;
+  text-align: right;
+}
+
+.total{
+  width: 65%;
+  float: right;
+  border-top: solid 1px #62b5a2;
+}
+
+.total h2{
+  width: 50%;
+  margin: 0px;
+  float: left;
+  text-align: left;
+}
+
+.total input{
+  width: 20%;
+  height: auto;
+  padding: 0px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #7e7e7e;
+  font-size: 1em;
+  text-align: right;
+  float: right;
+}
+
+.espacioadecorar{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 50px;
+  background-color: #D9E1E2;
+  float: left;
+}
+
+.espacioadecorar input{
+  display: none;
+}
+
+.espacioadecorar h1{
+  margin-top: 25px;
+}
+
+.opcionesespacios{
+  width: 100%;
+  margin: auto;
+  float: left;
+}
+
+.living, .escritorio, .comedor, .recibidor, .mudanza, .dormitorio, .cocina, .baño, .balcon, .comercial, .oficina{
+  width: 49.5%;
+  padding: 2px;
+  float: left;
+}
+
+.living:hover  .seleccionar, .dormitorio:hover .seleccionar, .escritorio:hover .seleccionar, .cocina:hover .seleccionar, .comedor:hover .seleccionar, .baño:hover .seleccionar, .recibidor:hover .seleccionar, .balcon:hover .seleccionar, .mudanza:hover .seleccionar, .comercial:hover .seleccionar, .oficina:hover .seleccionar{
+  display:block;
+}
+
+.espacioadecorar img{
+  opacity: 0.5;
+  z-index: 1;
+}
+
+#living:checked + label img ,#dormitorio:checked + label img, #escritorio:checked + label img, #cocina:checked + label img, #comedor:checked + label img, #baño:checked + label img{
+  opacity: 1;
+}
+
+#recibidor:checked + label img, #balcon:checked + label img, #mudanza:checked + label img, #comercial:checked + label img, #oficina:checked + label img{
+ opacity: 1;
+}
+
+.espacioadecorar p{
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.espaciohover{
+  position: relative;
+}
+
+.seleccionar{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 98.3%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.botonselecionar{
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d29d62;
+  z-index: 3;
+}
+
+.botonselecionar p{
+  margin: auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: #fff;
+}
+
+.estilo{
+  width: 100%;
+  float: left;
+}
+
+.estilo h1{
+  margin: 0px;
+  margin-bottom: 25px;
+}
+
+.estilo input{
+  display: none;
+}
+
+.opcionesestilos p{
+  margin: auto;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.opcionesestilos img{
+  width: 100%;
+  margin: auto;
+}
+
+.clasico, .escandinavo, .rustico, .nodefinido, .contemporaneo,  .industrial, .vintage{
+  width: 49.5%;
+  padding: 2px;
+  float: left;
+}
+
+.opcionesestilos img{
+  opacity: 0.6;
+  z-index: 1;
+}
+
+#clasico:checked + label img ,#contemporaneo:checked + label img, #escandinavo:checked + label img, #industrial:checked + label img, #rustico:checked + label img, #vintage:checked + label img, #nodefinido:checked + label img{
+  opacity: 1;
+}
+
+.estilohover{
+  position: relative;
+}
+
+.opcionesestilos .seleccionar{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 98.3%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.textoseleccionar{
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  padding: 12px;
+}
+
+.textoseleccionar p{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: #fff;
+  z-index: 3;
+}
+
+.estilo .botonselecionar{
+  position: absolute;
+  width: 60%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d29d62;
+  z-index: 3;
+}
+
+.nodefinido .botonselecionar{
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d29d62;
+  z-index: 3;
+}
+
+.botonselecionar p{
+  margin: auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: #fff;
+}
+
+.clasico:hover  .seleccionar, .contemporaneo:hover .seleccionar, .escandinavo:hover .seleccionar, .industrial:hover .seleccionar, .rustico:hover .seleccionar, .vintage:hover .seleccionar, .nodefinido:hover .seleccionar{
+  display:block;
+}
+
+.descripcion{
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 50px;
+  float: left;
+}
+
+textarea{
+  width: 100%;
+  height: 300px;
+  padding: 5px;
+  border: solid 1px #d1d1d1;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: #7e7e7e;
+  resize: none;
+}
+
+textarea:focus {
+  border: solid 1px #62b5a2;
+  outline: none;
+}
+
+.carga{
+  width: 100%;
+  margin-bottom: 30px;
+  float: left;
+}
+
+.opcionescarga{
+  width: 100%;
+  margin: auto;
+}
+
+.opcionescarga label{
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+.opcionescarga label:hover .st0{
+  fill: #62b5a2;
+}
+
+.opcionescarga label:hover .st1{
+  fill: white;
+}
+
+.carga input{
+  display: none;
+}
+
+.carga01, .carga02, .carga03, .carga04{
+  padding: 3px;
+  float: left;
+}
+
+svg{
+  fill:#7E7E7E;
+  transition: all 0.3s;
+}
+
+svg:hover{
+  fill: #fff;
+}
+
+.botonenviar{
+  width: 100%;
+  margin: auto;
+  float: right;
+}
+
+.botonenviar input{
+  margin: auto;
+  padding: 0px;
+  background-color: #d29d62;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: #fff;
+  border: none;
+  transition: all 0.3s;
+}
+
+.botonenviar input:hover{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 767px) and (min-width: 500px) {
+
+  .textoseleccionar p{
+    margin-top: 25%;
+    font-size: 1em;
+  }
+
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 768px) {
+
+  .contacto{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    float: left;
+  }
+
+  .inputnombre, .inputapellido, .inputemail, .inputtelefono{
+    width: 49.5%;
+    float: left;
+  }
+
+   .inputasunto{
+    width: 100%;
+    float: left;
+  }
+
+  .inputnombre, .inputemail{
+    margin-right: 1%;
+  }
+
+  .propuestatedo{
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .opcionesespacios{
+    margin: auto;
+  }
+
+  .living, .escritorio, .comedor, .recibidor, .mudanza, .dormitorio, .cocina, .baño, .balcon, .comercial, .oficina{
+    width: 25%;
+    padding: 5px;
+    float: left;
+  }
+
+  .tresespacios{
+    width: 100%;
+    margin-left: 13%;
+  }
+
+  .clasico, .escandinavo, .rustico, .nodefinido, .contemporaneo,  .industrial, .vintage{
+    width: 25%;
+    padding: 2px;
+    float: left;
+  }
+
+  .tresestilos{
+    width: 100%;
+    margin-left: 13%;
+  }
+
+  .descripcionlargo, .descripcionancho, .descripcionaltura, .descripcionsuperficie{
+    width: 49.5%;
+    float: left;
+  }
+
+  .descripcionlargo, .descripcionaltura{
+    margin-right: 1%;
+  }
+
+  .descripciondetalles{
+   width: 100%;
+   float: left;
+ }
+
+ .opcionescarga label{
+   display: block;
+   width: 25%;
+   float: left;
+ }
+
+ .botonenviar{
+   width: 20%;
+   margin: auto;
+   margin-right: 40%;
+   float: right;
+ }
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 899px) {
+
+  .textoseleccionar p{
+    margin-top: 25%;
+  }
+
+}
