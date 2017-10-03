@@ -104,7 +104,7 @@ header .wrapper{
 .menu a{
   display: block;
   margin: auto;
-  width: 95%;
+  width: 90%;
   padding: 30px;
   color: #7e7e7e;
   text-decoration: none;
@@ -625,7 +625,7 @@ footer h2{
   .menu a{
     width: auto;
     margin: auto;
-    margin: 60px 0px 0px 7%;
+    margin: 60px 0px 0px 5%;
     padding: 0px;
     padding-bottom: 7px;
     text-align: center;
@@ -682,7 +682,6 @@ footer h2{
     margin: 0px;
     right: 0px;
     background-color: rgba(0, 0, 0, 0);
-    float: left;
   }
 
   .teddeskin{
@@ -691,18 +690,12 @@ footer h2{
     background-color: rgba(255, 255, 255, 0.7);
   }
 
-  .diseña{
-    float: left;
-  }
-
   .iconsted{
-    position: absolute;
     display: block;
     width: 200px;
     margin: auto;
-    margin-top: 50vh;
+    margin-top: 53vh;
     margin-left: 50px;
-    float: left;
   }
 
   .presentacion h1{
