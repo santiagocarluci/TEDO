@@ -85,7 +85,24 @@ header .wrapper{
 }
 
 .redes{
-  display: none;
+  display: inline;
+  position: fixed;
+  width: 35px;
+  margin-top: 20vh;
+  right: 0;
+  border-radius: 5px 0px 0px 5px;
+  background-color: #f0da0b;
+  z-index: 13;
+}
+
+.redes img{
+  display: block;
+  width: 25px;
+  margin: 13%;
+}
+
+.redes img:hover{
+  opacity: 0.7;
 }
 
 .menu{
@@ -286,7 +303,7 @@ p{
   margin-top: 50px;
   padding: 15px;
   width: 100%;
-  background-color: #D9E1E2;
+  background-color: #f2f1ed;
   float: left;
 }
 
@@ -296,7 +313,7 @@ p{
 
 .pasos{
   margin: auto;
-  background-color: #D9E1E2;
+  background-color: #f2f1ed;
   width: 90%;
 }
 
@@ -313,7 +330,7 @@ p{
 
 .line{
   display: none;
-  background-color: #D9E1E2;
+  background-color: #f2f1ed;
 }
 
 .comofunciona h1{
@@ -422,14 +439,23 @@ p{
   float: right;
 }
 
-.redespieimg h4{
+.fb-share-button{
   display: block;
   width: 80%;
-  margin-top: 20px;
+  margin-top: 3px;
   margin-right: 5%;
   margin-bottom: 0px;
   text-align: right;
   float: left;
+}
+
+.fb-share-button a{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 0.7em;
+  color: #7e7e7e;
+  text-decoration: none;
+  transition: all 0.5s;
 }
 
 .redespieimg img{
@@ -643,27 +669,6 @@ footer h2{
     display: none;
   }
 
-  .redes{
-    display: inline;
-    position: fixed;
-    width: 35px;
-    margin-top: 20vh;
-    right: 0;
-    border-radius: 5px 0px 0px 5px;
-    background-color: #f0da0b;
-    z-index: 13;
-  }
-
-  .redes img{
-    display: block;
-    width: 25px;
-    margin: 13%;
-  }
-
-  .redes img:hover{
-    opacity: 0.7;
-  }
-
   .banner{
     position: relative;
     width: 100%;
@@ -710,7 +715,7 @@ footer h2{
     margin-top: 50px;
     width: 100%;
     min-height: 420px;
-    background-color: #D9E1E2;
+    background-color: #f2f1ed;
   }
 
   .pasos{
