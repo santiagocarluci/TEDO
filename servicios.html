@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/servicios.css">
     <link rel="stylesheet" href="css/fontello.css">
-    <link href="css/lightbox.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.imageview.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700" rel="stylesheet">
     <title>Servicios</title>
-    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.imageview.js"></script>
   </head>
 <!--- ================== FIN HEAD ================== --->
 
@@ -124,7 +125,10 @@
                   <h1>RENDERS</h1>
                 </div>
                 <div class="botonservicios">
-                  <a href="#">MIRÁ UN EJEMPLO</a>
+                  <div class="iv">
+                    <a href="img/servicios/render_01.jpg">MIRÁ UN EJEMPLO</a>
+                    <a class="none "href="img/servicios/render_02.jpg"></a>
+                  </div>
                 </div>
                 <div class="textorenders">
                   <p>Te ofrecemos una visión más realista de tu PROYECTO DECONLINE con tres imágenes en 3D.</p>
@@ -142,7 +146,11 @@
                   <h1>DISEÑO EXCLUSIVO</h1>
                 </div>
                 <div class="botonservicios">
-                  <a href="#">MIRÁ UN EJEMPLO</a>
+                  <div class="iv">
+                    <a href="img/servicios/diseñoamedida_01.jpg">MIRÁ UN EJEMPLO</a>
+                    <a class="none "href="img/servicios/diseñoamedida_02.jpg"></a>
+                    <a class="none "href="img/servicios/diseñoamedida_03.jpg"></a>
+                  </div>
                 </div>
                 <div class="textosexclusivos">
                   <div class="textoexclusivo">
@@ -219,5 +227,8 @@
       </div>
     </footer>
 <!--- ================== FIN FOOTER ================== --->
+  <script type="text/javascript">
+    $('.iv').imageview();
+  </script>
   </body>
 </html>

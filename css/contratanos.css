@@ -1,10 +1,5 @@
 /* - - - CSS CONTRATANOS - - - */
 
-.contacto{
-  width: 100%;
-  margin-bottom: 50px;
-  float: left;
-}
 
 label{
   cursor: pointer;
@@ -298,8 +293,7 @@ input:focus {
 }
 
 .descripcion{
-  width: 70%;
-  margin-left: 15%;
+  width: 100%;
   margin-bottom: 50px;
   float: left;
 }
@@ -448,6 +442,13 @@ svg:hover{
   .tresestilos{
     width: 100%;
     margin-left: 13%;
+  }
+
+  .descripcion{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    float: left;
   }
 
   .descripcionlargo, .descripcionancho, .descripcionaltura, .descripcionsuperficie{

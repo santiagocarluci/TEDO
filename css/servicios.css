@@ -93,6 +93,10 @@ h4{
   text-align: left;
 }
 
+.none{
+  display: none;
+}
+
 .renders{
   width: 100%;
   margin-bottom: 20px;
